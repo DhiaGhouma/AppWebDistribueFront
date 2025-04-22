@@ -7,7 +7,7 @@ import { User } from '../models/user.model';
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'http://localhost:8080/api/users';
+  private apiUrl = 'http://localhost:8082/api/users';
   
   // Mock current user for demo purposes
   private currentUserSubject = new BehaviorSubject<User | null>({

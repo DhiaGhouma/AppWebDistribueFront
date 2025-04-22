@@ -21,7 +21,7 @@ export interface ToastNotification {
   providedIn: 'root'
 })
 export class NotificationService {
-  private apiUrl = 'http://localhost:8080/api/notifications';
+  private apiUrl = 'http://localhost:8082/api/notifications';
   
   // Subject for toast notifications
   private toastSubject = new Subject<ToastNotification>();

@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My app</title>
+    <title>Skill Rater </title>
     <meta charset="UTF-8" />
     <base href="/">
+    <script>
+      const emoji = '⚡';
+      const canvas = document.createElement('canvas');
+      canvas.width = 64;
+      canvas.height = 64;
+    
+      const ctx = canvas.getContext('2d');
+      ctx.font = '48px serif';
+      ctx.fillText(emoji, 8, 48);
+    
+      const link = document.createElement('link');
+      link.rel = 'icon';
+      link.href = canvas.toDataURL();
+      document.head.appendChild(link);
+    </script>
+    
   </head>
   <body>
     <app-root>Loading...</app-root>
